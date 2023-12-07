@@ -6,7 +6,10 @@ const puerto = 80;
 const ArticulosController = require('./controllers/ArticulosController');
 app.use(express.json());
 app.get('/Articulos', ArticulosController.indexGet);
-// app.post('/Articulos', ArticulosController.indexPost);
+app.get('/Articulos/:id([0-9]+)', ArticulosController.itemGet);
+app.post('/Articulos', ArticulosController.indexPost);
+app.put('/Articulos/:id([0-9]+)', ArticulosController.itemPut);
+app.patch('/Articulos/:id([0-9]+)', ArticulosController.itemPatch);
 
 const CitasController = require('./controllers/CitasController');
 app.use(express.json());

@@ -8,20 +8,66 @@ class ArticulosController
         res.send(data);
     }
 
-    //static async indexpost(req,res){
-        //try{
-            //const newData = req.body;
+    static async itemGet(req, res) {
+        let id = req.params.id;
+        let data = await ArticulosModel.consultarPorId(id);
+        if (data.length == 0) {
+            res.status(404).send({errno: 404, error: 'Not found'});
+            return;
+        }
+        res.send(data[0]);
+    }
 
-            //const insertedId = await ArticulosModel.insertar(newData);
+    static async indexPost(req, res) {
+        try {
+            const newData = req.body;
 
-            //res.status(201)
-                //.header('Location', `/Articulos/${insertedId}`)
-                //.send({status: 201, message: `Created`});
-        //} catch (error){
-            //console.error(error);
-            //res.status(400).send({error: 400, error: `Bad Request`});
-        //}
-    //}
+            const insertedId = await ArticulosModel.insertar(newData);
+
+            res.status(201)
+                .header('Location', `/Articulos/${insertedId}`)
+                .send({status: 201, message: 'Created'});
+        } catch (error) {
+            console.error(error);
+            res.status(400).send({ errno: 400, error: 'Bad Request' });
+        }
+    }
+
+    static async itemPut(req, res) {
+        try {
+            const id = req.params.id;
+            const updatedData = req.body;
+
+            const result = await ArticulosModel.reemplazar(id, updatedData);
+
+            if (result === 0) {
+                res.status(404).send({ errno: 404, error: 'Not found' });
+            } else {
+                res.send({ message: 'Updated successfully'});
+            }
+        } catch (error) {
+            console.error(error);
+            res.status(400).send({ errno: 400, error: 'Bad Request'});
+        }
+    }
+
+    static async itemPatch(req, res) {
+        try {
+            const id = req.params.id;
+            const updatedFields = req.body;
+
+            const result = await ArticulosModel.actualizar(id, updatedFields);
+
+            if (result === 0) {
+                res.status(404).send({ errno: 404, error: 'Not found' });
+            } else {
+                res.send({ message: 'Successfull partial update'});
+            }
+        } catch (error) {
+            console.error(error);
+            res.status(400).send({ errno: 400, error: 'Bad Request' });
+        }
+    }
 }
 
 module.exports = ArticulosController;
