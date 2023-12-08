@@ -22,6 +22,10 @@ app.patch('/Citas/:id([0-9]+)', CitasController.itemPatch);
 const ExperienciasController = require('./controllers/ExperienciasController');
 app.use(express.json());
 app.get('/Experiencias', ExperienciasController.indexGet);
+app.get('/Experiencias/:id([0-9]+)', ExperienciasController.itemGet);
+app.post('/Experiencias', ExperienciasController.indexPost);
+app.put('/Experiencias/:id([0-9]+)', ExperienciasController.itemPut);
+app.patch('/Experiencias/:id([0-9]+)', ExperienciasController.itemPatch);
 
 const MensajesController = require('./controllers/MensajesController');
 app.use(express.json());
