@@ -44,5 +44,15 @@ Sobre un Proyecto de Salud Mental
 | [`PATCH /Mensajes`](./endpoints//patch-Mensajes.md)         | Actualiza un Mensaje ya existente |
 
 
+## Descripción General de Endpoints PreguntasRespuestas
+
+|                         Recurso                                                            | Descripción |
+| ------------------------------------------------------------- | ------------------------------------------------------- |
+| [`GET /PreguntasRespuestas`](./endpoints//get-PreguntasRespuestas.md)    | Recupera la lista de todas las preguntas Y Respuestas Mensajes dispobibles. |
+| [`GET /PreguntasRespuestas/{id}`](./endpoints//get-PreguntasRespuestas-id.md)| Obtiene información detallada sobre una Pregunta Y Respuesta en específico. |
+| [`POST /PreguntasRespuestas`](./endpoints//post-PreguntasRespuestas.md)        | Inserta una Nueva PreguntarRespuesta|
+| [`PATCH /PreguntasRespuestas`](./endpoints//patch-PreguntasRespuestas.md)         | Actualiza una PreguntaRespuesta ya existente |
+
+
 
 
