@@ -30,6 +30,10 @@ app.patch('/Experiencias/:id([0-9]+)', ExperienciasController.itemPatch);
 const MensajesController = require('./controllers/MensajesController');
 app.use(express.json());
 app.get('/Mensajes', MensajesController.indexGet);
+app.get('/Mensajes/:id([0-9]+)', MensajesController.itemGet);
+app.post('/Mensajes', MensajesController.indexPost);
+app.put('/Mensajes/:id([0-9]+)', MensajesController.itemPut);
+app.patch('/Mensajes/:id([0-9]+)', MensajesController.itemPatch);
 
 const PreguntasRespuestasController = require('./controllers/PreguntasRespuestasController');
 app.use(express.json());
