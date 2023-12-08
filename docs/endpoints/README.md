@@ -54,5 +54,16 @@ Sobre un Proyecto de Salud Mental
 | [`PATCH /PreguntasRespuestas`](./endpoints//patch-PreguntasRespuestas.md)         | Actualiza una PreguntaRespuesta ya existente |
 
 
+## Descripción General de Endpoints de ResultadosTests
+
+|                         Recurso                                                 | Descripción |
+| ------------------------------------------------------------- | ------------------------------------------------------- |
+| [`GET /ResultadosTests`](./endpoints//get-ResultadosTests.md)             | Recupera la lista de todos los Resultados de Tests dispobibles. |
+| [`GET /ResultadosTests/{id}`](./endpoints//get-ResultadosTests-id.md)     | Obtiene información detallada sobre un Resultado de Tests en específico. |
+| [`POST /ResultadosTests`](./endpoints//post-ResultadosTests.md)           | Inserta un Nuevo Resultado de Tests|
+| [`PATCH /ResultadosTests`](./endpoints//patch-ResultadosTests.md)         | Actualiza un Resultado Tests ya existente |
+
+
+
 
 
