@@ -38,6 +38,10 @@ app.patch('/Mensajes/:id([0-9]+)', MensajesController.itemPatch);
 const PreguntasRespuestasController = require('./controllers/PreguntasRespuestasController');
 app.use(express.json());
 app.get('/PreguntasRespuestas',PreguntasRespuestasController.indexGet);
+app.get('/PreguntasRespuestas/:id([0-9]+)', PreguntasRespuestasController.itemGet);
+app.post('/PreguntasRespuestas', PreguntasRespuestasController.indexPost);
+app.put('/PreguntasRespuestas/:id([0-9]+)', PreguntasRespuestasController.itemPut);
+app.patch('/PreguntasRespuestas/:id([0-9]+)', PreguntasRespuestasController.itemPatch);
 
 const ResultadosTestsController = require('./controllers/ResultadosTestsController');
 app.use(express.json());
