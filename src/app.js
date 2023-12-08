@@ -14,6 +14,10 @@ app.patch('/Articulos/:id([0-9]+)', ArticulosController.itemPatch);
 const CitasController = require('./controllers/CitasController');
 app.use(express.json());
 app.get('/Citas', CitasController.indexGet);
+app.get('/Citas/:id([0-9]+)', CitasController.itemGet);
+app.post('/Citas', CitasController.indexPost);
+app.put('/Articulos/:id([0-9]+)', CitasController.itemPut);
+app.patch('/Citas/:id([0-9]+)', CitasController.itemPatch);
 
 const ExperienciasController = require('./controllers/ExperienciasController');
 app.use(express.json());
