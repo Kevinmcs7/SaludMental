@@ -24,5 +24,15 @@ Sobre un Proyecto de Salud Mental
 | [`PATCH /Citas`](./endpoints//patch-Citas.md)         | Actualiza una cita ya existente |
 
 
+## Descripción General de Endpoints de Experiencias
+
+|                         Recurso                                                 | Descripción |
+| ------------------------------------------------------------- | ------------------------------------------------------- |
+| [`GET /Experiencias`](./endpoints//get-Experiencias.md)             | Recupera la lista de todas las experiencias dispobibles. |
+| [`GET /Experiencias/{id}`](./endpoints//get-Experiencias-id.md)     | Obtiene información detallada sobre una Experiencia en específico. |
+| [`POST /Experiencias`](./endpoints//post-Experiencias.md)           | Inserta una nueva Experiencia |
+| [`PATCH /Experiencias`](./endpoints//patch-Experiencias.md)         | Actualiza una Experiencia ya existente |
+
+
 
 

@@ -1,23 +1,22 @@
-# Endpoint: `PATCH /Citas/{id}`
+# Endpoint: `PATCH /Experiencias/{id}`
 
-Permite obtener información detallada sobre como actualizar una cita ya existente  
+Permite obtener información detallada sobre como actualizar una experiencia ya existente 
 
 ## Parámetros de URL
-- `{id}` (obligatorio): Identificador único de la Cita que quieras actualizar
+- `{id}` (obligatorio): Identificador único de la expereiencia que quieras actualizar
 
 ## Ejemplo de Solicitud
 ```http
-PATCH /Citas/7
+PATCH /Experiencias/7
 ```
 
 ## Respuesta Exitosa (Código 200 OK)
-## Cita actualizada
+## Articulo actualizado
 ```json
 {
     "ID_Usuario": 1,
-    "ID_Experto": 3,
-    "Fecha_Cita": "2023-01-07 13:00:00.000",
-    "Comentario": "Prueba creada con patch ..."
+    "Contenido": "Mi experiencia con post y patch...",
+    "Fecha_Publicacion": "2023-01-09 17:30:00.000"
 }
 ```
 
@@ -51,5 +50,5 @@ PATCH /Citas/7
 
 ## Notas Adicionales
 
--Asegurate de incluir un ID válido en la solicitud para poder modificar esa 
-Cita en especifico
+-Asegurate de incluir un ID válido en la solicitud para poder modificar esa Experiencia 
+en especifico

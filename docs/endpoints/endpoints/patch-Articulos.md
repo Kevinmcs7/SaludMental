@@ -3,11 +3,11 @@
 Permite obtener información detallada sobre como actualizar registro ya existente 
 
 ## Parámetros de URL
-- `{id}` (obligatorio): Identificador único del Articulo que quieras modificar
+- `{id}` (obligatorio): Identificador único del Articulo que quieras actualizar
 
 ## Ejemplo de Solicitud
 ```http
-PATCH /Articulos/1
+PATCH /Articulos/7
 ```
 
 ## Respuesta Exitosa (Código 200 OK)
