@@ -46,6 +46,10 @@ app.patch('/PreguntasRespuestas/:id([0-9]+)', PreguntasRespuestasController.item
 const ResultadosTestsController = require('./controllers/ResultadosTestsController');
 app.use(express.json());
 app.get('/ResultadosTests', ResultadosTestsController.indexGet);
+app.get('/ResultadosTests/:id([0-9]+)', ResultadosTestsController.itemGet);
+app.post('/ResultadosTests', ResultadosTestsController.indexPost);
+app.put('/ResultadosTests/:id([0-9]+)', ResultadosTestsController.itemPut);
+app.patch('/ResultadosTests/:id([0-9]+)', ResultadosTestsController.itemPatch);
 
 const TestsController = require('./controllers/TestsController');
 app.use(express.json());
