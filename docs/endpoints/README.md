@@ -74,6 +74,16 @@ Sobre un Proyecto de Salud Mental
 | [`PATCH /Tests`](./endpoints//patch-Tests.md)         | Actualiza un Tests ya existente |
 
 
+## Descripción General de Endpoints de Usuarios
+
+|                         Recurso                                                 | Descripción |
+| ------------------------------------------------------------- | ------------------------------------------------------- |
+| [`GET /Usuarios`](./endpoints//get-Usuarios.md)             | Recupera la lista de todos los Usuarios dispobibles. |
+| [`GET /Usuarios/{id}`](./endpoints//get-Usuarios-id.md)     | Obtiene información detallada sobre un Usuario en específico. |
+| [`POST /Usuarios`](./endpoints//post-Usuarios.md)           | Inserta un Nuevo Usuario|
+| [`PATCH /Usuarios`](./endpoints//patch-Usuarios.md)         | Actualiza un Usuario ya existente |
+
+
 
 
 
