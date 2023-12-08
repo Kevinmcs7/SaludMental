@@ -34,5 +34,15 @@ Sobre un Proyecto de Salud Mental
 | [`PATCH /Experiencias`](./endpoints//patch-Experiencias.md)         | Actualiza una Experiencia ya existente |
 
 
+## Descripción General de Endpoints de Mensajes
+
+|                         Recurso                                                 | Descripción |
+| ------------------------------------------------------------- | ------------------------------------------------------- |
+| [`GET /Mensajes`](./endpoints//get-Mensajes.md)             | Recupera la lista de todos los Mensajes dispobibles. |
+| [`GET /Mensajes/{id}`](./endpoints//get-Mensajes-id.md)     | Obtiene información detallada sobre un Mensaje en específico. |
+| [`POST /Mensajes`](./endpoints//post-Mensajes.md)           | Inserta un Nuevo Mensaje|
+| [`PATCH /Mensajes`](./endpoints//patch-Mensajes.md)         | Actualiza un Mensaje ya existente |
+
+
 
 
