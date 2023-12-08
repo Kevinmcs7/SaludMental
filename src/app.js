@@ -54,6 +54,10 @@ app.patch('/ResultadosTests/:id([0-9]+)', ResultadosTestsController.itemPatch);
 const TestsController = require('./controllers/TestsController');
 app.use(express.json());
 app.get('/Tests', TestsController.indexGet);
+app.get('/Tests/:id([0-9]+)', TestsController.itemGet);
+app.post('/Tests', TestsController.indexPost);
+app.put('/Tests/:id([0-9]+)', TestsController.itemPut);
+app.patch('/Tests/:id([0-9]+)', TestsController.itemPatch);
 
 const UsuariosController = require('./controllers/UsuariosController');
 app.use(express.json());
