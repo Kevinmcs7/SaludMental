@@ -1,7 +1,10 @@
 # API RESTful con Node.js
 
-Proyecto de demostración para clases de desarrollo de APIs utilizando Node.js,
-con implementación en contenedores de Docker.
+Proyecto de demostracion para clases de desarrollo de API utilizando node.JS
+sobre la salud mental que se ofrecera a los usuarios poder obtenr informacion,
+y poder hacer diferentes test de la informacion dada, ademas podras agrendar citas
+y tener poder compartir tu experiencia con los demas usuarios, ya sea con vivencias o
+preguntas.
 
 ## Tabla de contenido
 
@@ -29,7 +32,7 @@ Asegúrate de tener instalado y configurado Docker antes de comenzar.
 2. Navegar al directorio del proyecto:
    
    ```sh
-   cd node-restful
+   cd SaludMental
    ```
 
 3. Ejecutar el siguiente comando para iniciar los contenedores:
